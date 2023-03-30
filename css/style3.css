@@ -1,0 +1,57 @@
+.container {
+            border: solid red 2px;
+            background-color:rgb(7, 202, 108);
+            display:flex;
+            flex-flow:row wrap;
+            width:600px;
+            height:600px;
+            justify-content:space-around;
+            align-items:center;
+            }
+
+.container > div {
+            border: solid rgb(3, 3, 12) 2px;
+            background-color:beige;
+            width:200px;
+            height:200px;
+            margin:10px;
+            color:blue;
+            font-size:50px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+           
+                }
+
+.container > div > img {
+                            height:50%;
+                            width:50%;
+                            position:relative;
+                            animation-name:animate1;
+                            animation-duration:5s;
+                            animation-iteration-count:infinite;
+                            animation-direction:alternate;
+                        }
+
+.container > div > img:hover {
+                                
+                            
+                                }
+@keyframes animate1 {
+                        from {
+                                left:0;
+                                top:0;
+                                transform:rotate(0deg);
+                                }
+                        50%   {
+                                left:400px;
+                                top:0;
+                                transform:rotate(180deg);
+                                }
+                        
+                        to    {
+                                left:400px;
+                                top:400px;
+                                transform:rotate(360deg);
+                                }
+                    }

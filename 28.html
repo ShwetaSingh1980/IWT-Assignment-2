@@ -1,0 +1,34 @@
+<html>
+    <head><title>Greet</title><style>
+        #wish{
+            background-color: aquamarine;
+            color: brown;
+        }
+    </style></head>
+    <body>
+        <div id="wish" onclick="hide()"></div>
+        <script>
+            
+            fname=prompt("Enter your name: ");
+            dt=new Date()
+            hr=dt.getHours()
+            if(hr<=12)
+            greet="Good Morning"
+            else if(hr>12&&hr<=18)
+            greet="Good Afternoon"
+            else if(hr>18&&hr<=21)
+            greet="Good Evening"
+            else
+            greet="Good Night"
+            document.getElementById('wish').innerHTML=greet+" "+fname+"!!";
+                function hide()
+                {
+                    document.getElementById("wish").style.display='none';
+
+                }
+              
+        </script>
+
+        </div>
+    </body>
+</html>    

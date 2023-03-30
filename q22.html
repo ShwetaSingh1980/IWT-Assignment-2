@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+            .container{
+                display: flex;
+            }
+            
+            .inner{
+                color: black;
+                font-size: 40px;
+                text-align: center;
+                font-weight: 800px;
+                border: solid 1px black;
+            }
+            #inner1{
+                background-color: black;
+                color: black;
+                height: 100px;
+                width: 100px;
+            }
+            #inner2{
+                background-color: red;
+                color: red;
+                height: 100px;
+                width: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        
+            <script type = "text/javascript">
+                rows = parseInt(prompt("Enter number of columns: "));
+                columns = parseInt(prompt("Enter number of columns: "));
+                for(i=1; i<=rows; i++){
+                    document.write("<div class = 'container'>");
+
+                    for(j=1; j<=columns; j++){
+                        if((i+j)%2 == 0)
+                            document.write("<div class = inner id = inner1>" +(i+j)+ "</div>");
+                        else
+                            document.write("<div class = inner id = inner2>" +(i+j)+ " </div>");
+                    
+                    }
+                    document.write("</div>");
+                }
+            </script>
+        </div>
+    </body>
+</html>

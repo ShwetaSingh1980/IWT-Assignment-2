@@ -1,0 +1,48 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.wrapper{
+	background: url(bg2.jpg) no-repeat;
+	background-size: cover;
+	height: 100vh;\
+	width: 100%;
+}
+
+
+.center h1{
+	color: white;
+	font-size: 70px;
+	width: 1200px;
+	font-weight: bold;
+	text-align: center;
+}
+.center h2{
+	color: white;
+	font-size: 70px;
+	font-weight: bold;
+	margin-top: 10px;
+	width: 885px;
+	text-align: center;
+}
+.center .buttons{
+	margin: 35px 280px;
+}
+.buttons button{
+     justify-content: space-between;
+	height: 50px;
+	width: 150px;
+	font-size: 18px;
+	font-weight: 600;
+	color: #ffb3b3;
+	background: blue;
+	outline: none;
+	cursor: pointer;
+	border: 1px solid #cc0000;
+	border-radius: 25px;
+	transition: .4s;
+}
+
+.buttons button:hover{
+	background: #cc0000;
+}
